@@ -1,0 +1,248 @@
+/* Reset some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font styles for the entire page */
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the header/navigation bar */
+header {
+    color:#fff;
+    width: 100%;
+    padding:10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Style the hero section */
+#hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h1 span{
+    font-size: 44px;
+    color: #0fddbb;
+}
+#hero p {
+    font-size: 18px;
+    color: #f3f2f2;
+}
+
+/* Style other sections as needed (e.g., About, Portfolio, Resume, Blog) */
+main {
+    width: 100%;
+    max-width: 1200px; /* Adjust the max-width to your preference */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-bottom: 4px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+section h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom:30px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+  h3{
+font-size: 26px;
+font-weight: 100;
+margin: bottom 5px; ;}
+ html {
+    scroll-behavior: smooth;
+ }
+  
+/* Default styles for larger screens */
+body {
+    font-family:a, sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+
+/* Media query for tablet screens (portrait and landscape) */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0;
+    }
+}
+
+/* Media query for mobile screens (portrait and landscape) */
+@media (max-width: 480px) {
+    header {
+        padding: 5px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Adjust styles for other sections as needed */
+}
+
+/* Style the footer for all screen sizes */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Your existing CSS styles */
+
+/* Style the navigation links */
+header nav ul li a {
+    text-decoration:hotpink ;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Add hover effect for navigation links */
+header nav ul li a:hover {
+    color: #0fddbb; /* Change the text color on hover */
+}
+/* Your existing CSS styles */
+
+/* Style the custom cursor */
+/* ... (existing styles) ... */
+
+.image-cards {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 20px;
+   filter: drop-shadow( 0px 50px 16px #34353525);
+
+}
+
+
+.image-card {
+   flex: 1;
+   text-align: center;
+   position: relative;
+   cursor: pointer;
+   transition: transform 0.2s ease;
+
+}
+
+.image-card img {
+   max-width: 100%;
+   border-radius: 10px;
+}
+
+.card-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   transition: opacity 0.2s ease;
+   color: #fff;
+}
+
+.image-card:hover {
+   transform: scale(1.10);
+    /* Enlarge the card on hover */
+}
+
+.image-card:hover .card-overlay {
+   opacity: 1; /* Show the overlay on hover */
+}
+
+/* Additional styling for content within the overlay */
+.card-overlay h3 {
+   margin: 0;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.card-overlay p {
+   margin: 5px 0;
+   font-size: 14px;
+}
+
+/* ... (existing styles) ... */
+
+    /* ... (existing styles) ... */
+
+
+/* ... (existing styles) ... */
+/* ... (existing styles) ... */
+
+
+
+.gradient-background {
+	background: linear-gradient(-45deg, #000000, #181818f8, #555454, #000000);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+/* ... (existing styles) ... */
+
+
+/* ... (existing styles) ... */
+/* ... (existing styles) ... */
+
+ 
+
+
+/* ... (existing styles) ... */
